@@ -51,7 +51,7 @@ public class User {
 
     private Collection<Cars> cars;
 
-    @OneToMany
+    @OneToMany(mappedBy="owner")
     public Collection<Cars> getCars() {
         return cars;
     }
