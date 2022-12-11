@@ -49,14 +49,14 @@ public class User {
         this.password = password;
     }
 
-    private Collection<Cars> cars;
+    private Collection<Car> cars;
 
     @OneToMany(mappedBy="owner")
-    public Collection<Cars> getCars() {
+    public Collection<Car> getCars() {
         return cars;
     }
 
-    public void setCars(Collection<Cars> cars) {
+    public void setCars(Collection<Car> cars) {
         this.cars = cars;
     }
 }
